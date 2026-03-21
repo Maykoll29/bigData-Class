@@ -15,7 +15,7 @@ class EscrutinioNacional(MRJob):
         # 'conteos' es un generador con todos los 1s juntos: [1, 1, 1...]
         # Calcula la suma y emite la Clave (candidato) y el Valor final (la suma)
         total = sum(conteos) # Pista: usa sum()
-        yield candidato, TOTAL
+        yield candidato, total
         # TERMINA TU CODIGO AQUI
 
 if __name__ == '__main__':
